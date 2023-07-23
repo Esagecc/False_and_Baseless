@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --black: rgba(0,0,0,255);
+    --ltblue: rgba(61,223,247,255);
+    --white: rgba(255,255,255,255);
+    --orange: rgba(247,104,6,255);
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+
+    flex-direction: column;
+}
+ 
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.poster {
+    height: 150px;
+}
