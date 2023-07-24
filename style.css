@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;800&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 * {
     margin:0;
     padding:0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 :root {
@@ -17,15 +20,54 @@
 body {
     background-color: var(--black);
     display: flex;
-
     flex-direction: column;
+    justify-content: center;
 }
  
 main {
     display: flex;
+    flex-direction: column;
+    margin: 50px auto;
     justify-content: center;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .poster {
-    height: 150px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.title {
+    height: 30px;
+    margin-top: 20px;
+}
+
+article {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--ltblue);
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 15px;
+    font-size: 1.20rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo {
+    height: 45px;
+}
+
+.logo2 {
+    margin-left: 25px;
 }
