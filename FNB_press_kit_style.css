@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --black: rgba(0,0,0,255);
+    --ltblue: rgba(61,223,247,255);
+    --babyblue: rgb(240, 244, 247);
+    --white: rgba(255,255,255,255);
+    --orange: rgba(247,104,6,255);
+}
+
+body {
+    background-color: var(--babyblue);
+}
+
+header {
+    background-color: var(--black);
+    overflow: hidden;
+    width: 100%;
+}
+
+.corpus {
+    height: 50px;
+}
+
+/* animated xs */
+.toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid var(--white); */
+    margin-right: 20px;
+}
+  
+.toggle__burger{
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+  
+.toggle__burger::before,
+.toggle__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+  
+.toggle__burger::before {
+    transform: translateY(-10px);
+  }
+  
+.toggle__burger::after {
+    transform: translateY(10px);
+}
+  
+/* ANIMATION */
+.toggle.active .toggle__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.toggle.active .toggle__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.toggle.active .toggle__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+  
+.top-nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+nav.active {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100px;
+    text-align: center;
+}
+  
+nav a:hover {
+    background-color: var(--ltblue);
+    color: black;
+}
+
+.poster {
+    width: 100%;
+    padding: 20px 0;
+}
+
+
