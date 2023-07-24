@@ -127,4 +127,11 @@ nav a:hover {
     padding: 20px 0;
 }
 
+main {
+    background-color: var(--babyblue);
+    margin: 0 20px;
+}
 
+.pic {
+    width: 100%;
+}
