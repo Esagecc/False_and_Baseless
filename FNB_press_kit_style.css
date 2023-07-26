@@ -160,3 +160,8 @@ h1 {
 .actor {
     font-weight: 700;
 }
+
+container li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}

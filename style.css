@@ -13,6 +13,7 @@
 :root {
     --black: rgba(0,0,0,255);
     --ltblue: rgba(61,223,247,255);
+    --grblue: rgb(45, 153, 170);
     --white: rgba(255,255,255,255);
     --orange: rgba(247,104,6,255);
 }
@@ -27,7 +28,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: 50px auto 0;
     justify-content: center;
 }
 
@@ -48,21 +49,27 @@ header {
 }
 
 article {
-    margin: 50px 0;
+    margin: 25px 0;
     display: flex;
     flex-direction: column;
 }
 
 button {
-    background-color: var(--ltblue);
-    width: 100%;
+    background: var(--ltblue);
+    width: 90%;
     border: none;
     border-radius: 10px;
-    padding: 18px;
-    margin: 15px;
+    padding: 15px;
+    margin: 10px;
     font-size: 1.20rem;
     font-weight: 800;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--grblue);
+    color: var(--white);
 }
 
 .logo {
@@ -71,4 +78,28 @@ button {
 
 .logo2 {
     margin-left: 25px;
+}
+
+.icons {
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 0 25px;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-flickr {
+    padding: 0 10px;
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-flickr:hover {
+    color: var(--orange);
+}
+
+
+.footer-text {
+    color: var(--white);
+    text-align: start;
+    font-size: 0.75rem;
+    padding-top: 20px;
 }
