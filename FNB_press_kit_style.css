@@ -16,6 +16,7 @@
     --babyblue: rgb(240, 244, 247);
     --white: rgba(255,255,255,255);
     --orange: rgba(247,104,6,255);
+    --grblue: rgb(45, 153, 170);
 }
 
 body {
@@ -30,6 +31,7 @@ header {
 
 .corpus {
     height: 50px;
+    padding-left: 20px;
 }
 
 /* animated xs */
@@ -127,7 +129,7 @@ nav a:hover {
     padding: 20px 0;
 }
 
-main {
+main, footer {
     background-color: var(--babyblue);
     margin: 0 20px;
 }
@@ -135,7 +137,7 @@ main {
 .pic {
     width: 100%;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
 
 }
 
@@ -165,3 +167,46 @@ container li {
     list-style-type: none;
     padding-bottom: 10px;
 }
+
+.corpus, .sage {
+    height: 50px;
+    margin: 10px 0 5px;
+}
+
+.icons {
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 0 25px;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-flickr {
+    padding: 0 10px;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-flickr:hover {
+    color: var(--orange);
+}
+
+/* following code is for the button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--grblue);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
