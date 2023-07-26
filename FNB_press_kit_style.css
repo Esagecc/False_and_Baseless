@@ -31,7 +31,7 @@ header {
 
 .corpus {
     height: 50px;
-    padding-left: 20px;
+    margin: 10px 20px;
 }
 
 /* animated xs */
@@ -168,7 +168,7 @@ container li {
     padding-bottom: 10px;
 }
 
-.corpus, .sage {
+.corpus-black, .sage {
     height: 50px;
     margin: 10px 0 5px;
 }
