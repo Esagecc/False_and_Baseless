@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 30px auto 0;
-    justify-content: center;
+    
 }
 
 header {
@@ -135,3 +135,41 @@ button:hover {
     aspect-ratio: 16/9;
 }
 
+@media (min-width: 600px) {
+    main {
+        margin: 50px auto 30px;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .poster {
+        width: 250px;
+    }
+
+    .title {
+        height: 80px;
+        margin-top: 50px;
+    }
+
+    button {
+        width: 500px;
+    }
+
+    footer {
+        width: 800px;
+    }
+
+    .logo {
+        margin-top: 80px;
+        height: 80px;
+    }
+
+    .footer-text {
+        font-size: 1.25rem;
+    }
+
+    .youtube-player-popup {
+        width: 80%;
+        top: 0;
+    }
+}
