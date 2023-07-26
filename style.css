@@ -28,7 +28,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: 50px auto 0;
+    margin: 30px auto 0;
     justify-content: center;
 }
 
@@ -49,18 +49,18 @@ header {
 }
 
 article {
-    margin: 25px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
 }
 
 button {
     background: var(--ltblue);
-    width: 90%;
+    width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 1.20rem;
     font-weight: 800;
     cursor: pointer;
