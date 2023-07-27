@@ -259,9 +259,37 @@ container li {
        align-items: center;
     }
 
-
     main, footer {
         width: 60%;
         margin: 0 auto;
+    }
+
+    .staff {
+        display: flex;
+    }
+
+    .pic {
+        width: 33%;
+        margin-right: 50px;
+        flex-shrink: 0;
+    }
+
+    .bio {
+        font-size: 1.25rem;
+        padding-top: 20px;
+        width: 400px;
+    }
+
+    .corpus-black, .sage {
+        height: 80px;
+    }
+
+    container p {
+        font-size: 1.2rem;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+        padding-bottom: 25px;
     }
   }
