@@ -102,7 +102,7 @@ nav {
     display: flex;
     flex-direction: column;
     display: none;
-    transition: all 1s ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 nav.active {
@@ -117,6 +117,7 @@ nav a {
     font-size: 1rem;
     font-weight: 100px;
     text-align: center;
+    transition: all 400ms ease-in-out;
 }
   
 nav a:hover {
@@ -209,4 +210,58 @@ container li {
   
   #myBtn:hover {
     background-color: #555;
+  }
+
+  @media (min-width: 600px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corpus {
+        margin: 10px 0;
+    }
+
+   nav {
+    display: block;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 20px;
+   }
+
+
+   .toggle, .toggle__burger {
+    display: none;
+   }
+
+   .top-nav {
+    justify-content: start;
+    flex-direction: row;
+   }
+
+   .nav-desk {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+   }
+
+   nav a:hover {
+    background-color: var(--black);
+    color: var(--ltblue);
+   }   
+
+   .poster {
+       width: 30%;
+       align-items: center;
+    }
+
+
+    main, footer {
+        width: 60%;
+        margin: 0 auto;
+    }
   }
