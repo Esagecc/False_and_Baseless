@@ -195,6 +195,10 @@ container li {
     margin-bottom: 25px;
 }
 
+.sage {
+    cursor: pointer;
+}
+
 /* following code is for the button */
 #myBtn {
     display: none;
@@ -299,7 +303,7 @@ container li {
     }
 
     .laurel {
-        height: 200px;
+        height: 230px;
         gap: 10px;
     }
   }
