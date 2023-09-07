@@ -192,6 +192,7 @@ container li {
 
 .laurel {
     height: 220px;
+    max-width: 350px;
     margin-bottom: 25px;
 }
 
